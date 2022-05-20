@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Global Events</title>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <div class="container header">
+                <div class="header__logo">
+                    Global Events
+                </div>
+                <a href="#" type="button" class="header__btn">Suggest</a>
+            </div>
+        </header>
+        <main id="main">
+            <div class="container">
+                <div class="main__title">
+                    Event Calandar for digital nomads
+                </div>
+                <div class="main__content">
+                    <div class="main-content-filter">
+                        <div class="main-content-filter__title">
+                            <span><i class="fas fa-filter"></i> Filter</span>
+                        </div>
+                        <div id="filter_content_0" class="main-content-filter-content">
+                            <div class="main-content-filter-content__title">
+                                <span>Event Type</span>
+                                <span id="down_0" class="down" onclick="downList(0)"><i class="fa-solid fa-angle-down"></i></span>
+                                <span id="up_0" class="up" onclick="upList(0)" style="display:none;"><i class="fa-solid fa-angle-up"></i></span>
+                            </div>
+                            <ul id="items_id_0" class="main-content-filter-content-items">
+                                <li><input type="checkbox" class="main-content-filter-content-items__item"></input> Festivals</li>
+                                <li><input type="checkbox" class="main-content-filter-content-items__item"></input> Music</li>
+                                <li><input type="checkbox" class="main-content-filter-content-items__item"></input> Sports</li>
+                                <li><input type="checkbox" class="main-content-filter-content-items__item"></input> Winter</li>
+                            </ul>
+                        </div>
+                        <div id="filter_content_1" class="main-content-filter-content">
+                            <div class="main-content-filter-content__title">
+                                <span>Location</span>
+                                <span id="down_1" class="down" onclick="downList(1)"><i class="fa-solid fa-angle-down"></i></span>
+                                <span id="up_1" class="up" onclick="upList(1)" style="display:none;"><i class="fa-solid fa-angle-up"></i></span>
+                            </div>
+                            <ul id="items_id_1" class="main-content-filter-content-items">
+                                <li><input type="checkbox" class="main-content-filter-content-items__item"></input> Festivals</li>
+                                <li><input type="checkbox" class="main-content-filter-content-items__item"></input> Music</li>
+                                <li><input type="checkbox" class="main-content-filter-content-items__item"></input> Sports</li>
+                                <li><input type="checkbox" class="main-content-filter-content-items__item"></input> Winter</li>
+                            </ul>
+                        </div>
+                        <div id="filter_content_2" class="main-content-filter-content">
+                            <div class="main-content-filter-content__title">
+                                <span>Date</span>
+                                <span id="down_2" class="down" onclick="downList(2)"><i class="fa-solid fa-angle-down"></i></span>
+                                <span id="up_2" class="up" onclick="upList(2)" style="display:none;"><i class="fa-solid fa-angle-up"></i></span>
+                            </div>
+                            <ul id="items_id_2" class="main-content-filter-content-items">
+                                <li><input type="checkbox" class="main-content-filter-content-items__item"></input> Festivals</li>
+                                <li><input type="checkbox" class="main-content-filter-content-items__item"></input> Music</li>
+                                <li><input type="checkbox" class="main-content-filter-content-items__item"></input> Sports</li>
+                                <li><input type="checkbox" class="main-content-filter-content-items__item"></input> Winter</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main-content-grid">
+                        <!-- item 1 -->
+                        <div class="main-content-grid-item">
+                            <div class="main-content-grid-item__info">
+                                <div class="main-content-grid-item__info--img">
+                                    <img src="https://hatru.net/upload/icon/20180606/s%C6%A1n%202.jpg" alt="">
+                                </div>
+                                <div class="main-content-grid-item__info--box">
+                                    <div class="main-content-grid-item__info--name">Son Tung MTP</div>
+                                    <div class="main-content-grid-item__info--country">Viet Nam</div>
+                                </div>
+                            </div>
+                            <div class="main-content-grid-item__social">
+                                <span><i class="fa-solid fa-envelope"></i> hi@mtpentertainment.com</span>
+                                <span><i class="fa-brands fa-telegram"></i> @sontungmtp</span>
+                                <span><i class="fa-solid fa-location-dot"></i> Ho Chi Minh City</span>
+                                <span><i class="fa-brands fa-twitter"></i> @sontungmtp</span>
+                            </div>
+                        </div>
+                        <!-- item 2 -->
+                        <div class="main-content-grid-item">
+                            <div class="main-content-grid-item__info">
+                                <div class="main-content-grid-item__info--img">
+                                    <img src="https://hatru.net/upload/icon/20180606/s%C6%A1n%202.jpg" alt="">
+                                </div>
+                                <div class="main-content-grid-item__info--box">
+                                    <div class="main-content-grid-item__info--name">Son Tung MTP</div>
+                                    <div class="main-content-grid-item__info--country">Viet Nam</div>
+                                </div>
+                            </div>
+                            <div class="main-content-grid-item__social">
+                                <span><i class="fa-solid fa-envelope"></i> hi@mtpentertainment.com</span>
+                                <span><i class="fa-brands fa-telegram"></i> @sontungmtp</span>
+                                <span><i class="fa-solid fa-location-dot"></i> Ho Chi Minh City</span>
+                                <span><i class="fa-brands fa-twitter"></i> @sontungmtp</span>
+                            </div>
+                        </div>
+                        <!-- item 3 -->
+                        <div class="main-content-grid-item">
+                            <div class="main-content-grid-item__info">
+                                <div class="main-content-grid-item__info--img">
+                                    <img src="https://hatru.net/upload/icon/20180606/s%C6%A1n%202.jpg" alt="">
+                                </div>
+                                <div class="main-content-grid-item__info--box">
+                                    <div class="main-content-grid-item__info--name">Son Tung MTP</div>
+                                    <div class="main-content-grid-item__info--country">Viet Nam</div>
+                                </div>
+                            </div>
+                            <div class="main-content-grid-item__social">
+                                <span><i class="fa-solid fa-envelope"></i> hi@mtpentertainment.com</span>
+                                <span><i class="fa-brands fa-telegram"></i> @sontungmtp</span>
+                                <span><i class="fa-solid fa-location-dot"></i> Ho Chi Minh City</span>
+                                <span><i class="fa-brands fa-twitter"></i> @sontungmtp</span>
+                            </div>
+                        </div>
+                        <!-- item 4 -->
+                        <div class="main-content-grid-item">
+                            <div class="main-content-grid-item__info">
+                                <div class="main-content-grid-item__info--img">
+                                    <img src="https://hatru.net/upload/icon/20180606/s%C6%A1n%202.jpg" alt="">
+                                </div>
+                                <div class="main-content-grid-item__info--box">
+                                    <div class="main-content-grid-item__info--name">Son Tung MTP</div>
+                                    <div class="main-content-grid-item__info--country">Viet Nam</div>
+                                </div>
+                            </div>
+                            <div class="main-content-grid-item__social">
+                                <span><i class="fa-solid fa-envelope"></i> hi@mtpentertainment.com</span>
+                                <span><i class="fa-brands fa-telegram"></i> @sontungmtp</span>
+                                <span><i class="fa-solid fa-location-dot"></i> Ho Chi Minh City</span>
+                                <span><i class="fa-brands fa-twitter"></i> @sontungmtp</span>
+                            </div>
+                        </div>
+                        <!-- item 5 -->
+                        <div class="main-content-grid-item">
+                            <div class="main-content-grid-item__info">
+                                <div class="main-content-grid-item__info--img">
+                                    <img src="https://hatru.net/upload/icon/20180606/s%C6%A1n%202.jpg" alt="">
+                                </div>
+                                <div class="main-content-grid-item__info--box">
+                                    <div class="main-content-grid-item__info--name">Son Tung MTP</div>
+                                    <div class="main-content-grid-item__info--country">Viet Nam</div>
+                                </div>
+                            </div>
+                            <div class="main-content-grid-item__social">
+                                <span><i class="fa-solid fa-envelope"></i> hi@mtpentertainment.com</span>
+                                <span><i class="fa-brands fa-telegram"></i> @sontungmtp</span>
+                                <span><i class="fa-solid fa-location-dot"></i> Ho Chi Minh City</span>
+                                <span><i class="fa-brands fa-twitter"></i> @sontungmtp</span>
+                            </div>
+                        </div>
+                        <!-- item 6 -->
+                        <div class="main-content-grid-item">
+                            <div class="main-content-grid-item__info">
+                                <div class="main-content-grid-item__info--img">
+                                    <img src="https://hatru.net/upload/icon/20180606/s%C6%A1n%202.jpg" alt="">
+                                </div>
+                                <div class="main-content-grid-item__info--box">
+                                    <div class="main-content-grid-item__info--name">Son Tung MTP</div>
+                                    <div class="main-content-grid-item__info--country">Viet Nam</div>
+                                </div>
+                            </div>
+                            <div class="main-content-grid-item__social">
+                                <span><i class="fa-solid fa-envelope"></i> hi@mtpentertainment.com</span>
+                                <span><i class="fa-brands fa-telegram"></i> @sontungmtp</span>
+                                <span><i class="fa-solid fa-location-dot"></i> Ho Chi Minh City</span>
+                                <span><i class="fa-brands fa-twitter"></i> @sontungmtp</span>
+                            </div>
+                        </div>
+                        <!-- item 7  -->
+                        <div class="main-content-grid-item">
+                            <div class="main-content-grid-item__info">
+                                <div class="main-content-grid-item__info--img">
+                                    <img src="https://hatru.net/upload/icon/20180606/s%C6%A1n%202.jpg" alt="">
+                                </div>
+                                <div class="main-content-grid-item__info--box">
+                                    <div class="main-content-grid-item__info--name">Son Tung MTP</div>
+                                    <div class="main-content-grid-item__info--country">Viet Nam</div>
+                                </div>
+                            </div>
+                            <div class="main-content-grid-item__social">
+                                <span><i class="fa-solid fa-envelope"></i> hi@mtpentertainment.com</span>
+                                <span><i class="fa-brands fa-telegram"></i> @sontungmtp</span>
+                                <span><i class="fa-solid fa-location-dot"></i> Ho Chi Minh City</span>
+                                <span><i class="fa-brands fa-twitter"></i> @sontungmtp</span>
+                            </div>
+                        </div>
+                        <!-- item 8 -->
+                        <div class="main-content-grid-item">
+                            <div class="main-content-grid-item__info">
+                                <div class="main-content-grid-item__info--img">
+                                    <img src="https://hatru.net/upload/icon/20180606/s%C6%A1n%202.jpg" alt="">
+                                </div>
+                                <div class="main-content-grid-item__info--box">
+                                    <div class="main-content-grid-item__info--name">Son Tung MTP</div>
+                                    <div class="main-content-grid-item__info--country">Viet Nam</div>
+                                </div>
+                            </div>
+                            <div class="main-content-grid-item__social">
+                                <span><i class="fa-solid fa-envelope"></i> hi@mtpentertainment.com</span>
+                                <span><i class="fa-brands fa-telegram"></i> @sontungmtp</span>
+                                <span><i class="fa-solid fa-location-dot"></i> Ho Chi Minh City</span>
+                                <span><i class="fa-brands fa-twitter"></i> @sontungmtp</span>
+                            </div>
+                        </div>
+                        <!-- item 9 -->
+                        <div class="main-content-grid-item">
+                            <div class="main-content-grid-item__info">
+                                <div class="main-content-grid-item__info--img">
+                                    <img src="https://hatru.net/upload/icon/20180606/s%C6%A1n%202.jpg" alt="">
+                                </div>
+                                <div class="main-content-grid-item__info--box">
+                                    <div class="main-content-grid-item__info--name">Son Tung MTP</div>
+                                    <div class="main-content-grid-item__info--country">Viet Nam</div>
+                                </div>
+                            </div>
+                            <div class="main-content-grid-item__social">
+                                <span><i class="fa-solid fa-envelope"></i> hi@mtpentertainment.com</span>
+                                <span><i class="fa-brands fa-telegram"></i> @sontungmtp</span>
+                                <span><i class="fa-solid fa-location-dot"></i> Ho Chi Minh City</span>
+                                <span><i class="fa-brands fa-twitter"></i> @sontungmtp</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container footer">
+                <div class="footer__copyright">
+                    <p><i class="fa-solid fa-copyright"></i> 2022 Global Events - Kizorry Clone</p>
+                    <a href="">Link 1</a>
+                    <a href="">Link 2</a>
+                </div>
+                <div class="footer__social">
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        function downList(id) {
+            document.getElementById('items_id_'+id).style.display = 'block';
+            document.getElementById('down_'+id).style.display = 'none';
+            document.getElementById('up_'+id).style.display = 'block';
+        }
+        function upList(id) {
+            document.getElementById('items_id_'+id).style.display = 'none';
+            document.getElementById('down_'+id).style.display = 'block';
+            document.getElementById('up_'+id).style.display = 'none';
+        }
+    </script>
+</body>
+</html>
